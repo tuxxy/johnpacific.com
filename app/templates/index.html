@@ -1,0 +1,101 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}John Pacific - Software Engineer {% endblock %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('static', filename='css/stylez.css')}}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+{% block content %}
+<header id="top" class="header">
+    <div class="text-vertical-center">
+        <h1>John Pacific</h1>
+        <h3>Software Engineer, Cypherpunk, Visionary</h3>
+    </div>
+</header>
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>John Pacific is a young and intelligent developer!</h2>
+                <p class="lead">I have been working with software since I was very young. I became interested in it at around the age of six. Being an aspie (a person with Asperger's), I became obsessive about programming and computers. I moved away from North Carolina to Salt Lake City, Utah four days after my 18th birthday to pursue a future in Software Engineering.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="profiles bg-primary" id="profiles">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>My Profiles</h2>
+                <hr class="tiny">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="profile-link">
+                           <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x text-primary"></i>
+                            </span>  
+							<h4><strong>GitHub</strong></h4>
+							<p>My GitHub contains all my personal projects. Check 'em out!</p>
+<a href="https://github.com/tuxxy/" class="btn btn-light">GitHub/tuxxy</a>
+                        </div>
+                    </div>
+					<div class="col-md-3 col-sm-6">
+						<div class="profile-link">
+							<span class="fa-stack fa-4x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-twitter fa-stack-1x text-primary"></i>
+							</span>
+							<h4><strong>Twitter</strong></h4>
+							<p>Sometimes I tweet cool things, mostly during conferences and events, though.</p>
+							<a href="https://twitter.com/__tux" class="btn btn-light">Twitter/@__tux</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="profile-link">
+							<span class="fa-stack fa-4x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-key fa-stack-1x text-primary"></i>
+							</span>
+							<h4><strong>GPG Key</strong></h4>
+							<p>Want to communicate securely? Click below for my pubkey, include yours, too!</p>
+							<a href="{{url_for('static', filename='res/JohnPacific.asc')}}" class="btn btn-light">John Pacific/PubKey</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="profile-link">
+							<span class="fa-stack fa-4x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-linkedin fa-stack-1x text-primary"></i>
+							</span>
+							<h4><strong>LinkedIn</strong></h4>
+							<p>I don't use LinkedIn much due to privacy issues. Only minimal info is available.</p>
+							<a href="https://www.linkedin.com/in/john-pacific-04a4a7a1" class="btn btn-light">LinkedIn/Me</a>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+	<div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+            <h4>John Pacific</h4>
+            <ul class="list-unstyled">
+                <li><i class="fa fa-envelope-o fa-fw"></i>
+                    <a href="mailto:me@JohnPacific.com">me@JohnPacific.com</a>
+                </li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">Copyleft - all rights reserved</p>
+        </div>
+	</div>
+</footer>
+{% endblock %} 
